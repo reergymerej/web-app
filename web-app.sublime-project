@@ -1,0 +1,17 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "folder_exclude_patterns": [
+                "bower_components",
+                "node_modules",
+                "js",
+                "css"
+            ],
+            "file_exclude_patterns": [
+                "*~"
+            ]
+        }
+    ]
+}

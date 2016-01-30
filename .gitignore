@@ -1,0 +1,8 @@
+node_modules
+bower_components
+.DS_Store
+public/js
+public/css/
+*.sublime-workspace
+*~
+*.log

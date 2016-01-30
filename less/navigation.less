@@ -1,0 +1,40 @@
+@import 'theme';
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  li {
+    @height: 3em;
+
+    flex: 1;
+    text-align: center;
+
+    border: @border;
+    border-right: none;
+    &:nth-of-type(1) {
+      border-left: none;
+    }
+
+    height: @height;
+
+    a {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      display: block;
+      height: @height;
+      line-height: @height;
+      .amnesia-link;
+
+      &:hover {
+        cursor: pointer;
+        background-color: @base-light;
+      }
+    }
+  }
+}

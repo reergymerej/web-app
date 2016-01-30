@@ -1,0 +1,21 @@
+{
+  "name": "web-app",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Jeremy Greer <jeremy.greer@prometheanworld.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}

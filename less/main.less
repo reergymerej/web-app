@@ -1,0 +1,110 @@
+@import 'theme';
+@import 'web-app';
+
+html {
+  height: 100%;
+}
+
+body {
+    background-color: @background-color;
+    color: @color;
+    font-family: @font-family;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    letter-spacing: 0.1em;
+
+    #content, #web-app {
+      height: 100%;
+    }
+}
+
+// ===============================================================================
+// selected text
+.selectedText {
+  background: greenyellow;
+  color: #000;
+}
+
+::selection {
+  .selectedText;
+}
+::-moz-selection {
+  .selectedText;
+}
+
+// ===============================================================================
+// links
+
+.hover {
+  &:hover, &:active {
+    color: @link-hover;
+  }
+}
+
+// TODO: use "extend" to clean this up
+a {
+  text-decoration: none;
+
+  &:link {
+    color: @link;
+  }
+
+  &:visited {
+    color: @link-visited;
+  }
+
+  .hover;
+}
+
+.subtle-link {
+  &:link, &:visited {
+    color: @color;
+  }
+
+  .hover;
+}
+
+.amnesia-link {
+  &:visited {
+    color: @link;
+  }
+
+  .hover;
+}
+
+// ===============================================================================
+// buttons
+
+button {
+    padding: 0.5em 1em;
+    letter-spacing: 0.1em;
+    border: none;
+    font-size: 1em;
+    background-color: @base;
+    color: @link;
+    cursor: pointer;
+}
+
+button:hover {
+    color: @link-hover;
+    background-color: @base-light;
+}
+
+button:active {
+    background-color: @link-hover;
+    color: @base-light;
+}
+
+// ===============================================================================
+// forms
+
+form {
+  input {
+    padding: 0.5em;
+    letter-spacing: 0.1em;
+    border: @border;
+    padding: 0.5em;
+    font-size: 1em;
+  }
+}
